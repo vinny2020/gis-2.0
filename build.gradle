@@ -37,6 +37,11 @@ dependencies {
     compile 'org.sitemesh:sitemesh:3.0-alpha-2'
 
     compile 'org.gaelyk:gaelyk:2.1.2'
+/*    compile 'org.apache.httpcomponents:httpmime:4.1'
+    compile 'org.apache.httpcomponents:httpclient:4.1'
+    compile 'org.apache.httpcomponents:httpcore:4.1'
+    compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.5.1'
+    compile 'com.google.api.client:google-api-client:1.2.1-alpha'*/
 
 
     testCompile 'org.gaelyk:gaelyk-spock:0.4','junit:junit:4.8.2'

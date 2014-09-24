@@ -1,7 +1,7 @@
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
     <application>myappid</application>
     
-    <version>1</version>
+    <version>7</version>
 
     <!-- Enable concurrent requests by default to serve requests in parallel -->
     <threadsafe>true</threadsafe>
@@ -29,6 +29,13 @@
     <!-- as per the release of SDK 1.2.8, -->
     <!-- this should speed up cold startups of applications by 10% -->
     <precompilation-enabled>true</precompilation-enabled>
+
+
+    <static-error-handlers>
+        <handler file="default_error.html"/>
+        <handler file="over_quota.html" error-code="over_quota"/>
+        <handler file="timeout.html" error-code="timeout"/>
+    </static-error-handlers>
     
     <static-files>
         <exclude path="/WEB-INF/**.groovy" />
